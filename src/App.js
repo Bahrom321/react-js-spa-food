@@ -15,7 +15,7 @@ function App() {
       <Header/>
           <main className="container content">
             <Switch>
-            <Route exact path="/home" component={ Home } />
+            <Route exact path="/" component={ Home } />
             <Route path="/category/:name" component={ Category } />
             <Route path="/meal/:id" component={Recipe} />
             <Route component={ NotFound } />
