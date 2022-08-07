@@ -10,11 +10,11 @@ function MealItem(props) {
             <div className="card-content">
                 <h3 className="card-title"><b>{strMeal}</b></h3>
             </div>
-            <div className="card-action">
-                <Link to={`/meal/${idMeal}`} className="btn">
+   
+                <Link to={`/meal/${idMeal}`} className="btn bg-primary">
                     Watch Recipe
                 </Link>
-            </div>
+       
       </div>
     )
 }

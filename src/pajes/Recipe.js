@@ -18,7 +18,7 @@ function Recipe() {
   }, [])
   return (
     <>
-      <button className="btn" onClick={goBack}>Go Back</button>
+      <button className="btn bg-primary" onClick={goBack}>Go Back</button>
       {!recipe.idMeal ? <Loader /> : (
         <div className="recipe">
           <img src={recipe.strMealThumb} alt={recipe.strMeal}/>
@@ -26,7 +26,7 @@ function Recipe() {
           <h6><b>Category:</b> {recipe.strCategory}</h6>
           {recipe.strArea ? <h6><b>Area:</b> {recipe.strArea}</h6> : null}
           <p>{recipe.strInstructions}</p>
-          <button onClick={handleRecipeShow} className="btn">Show Recipe</button>
+          <button onClick={handleRecipeShow} className="btn bg-primary">Show Recipe</button>
           {showRecipe ? (
             <table className="centred">
               <thead>

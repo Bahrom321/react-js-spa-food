@@ -21,7 +21,7 @@ function Search({cb = Function.prototype}) {
                 onChange={(e) => setValue(e.target.value)}
                 value={value} 
                 />
-                <button className="btn"
+                <button className="btn bg-primary"
                 style={{
                     position:'absolute',
                     top:0,
